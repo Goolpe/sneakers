@@ -29,7 +29,7 @@ class MainPage extends StatelessWidget {
       builder: (context, state) {
         return Scaffold(
           appBar: const SneakerAppBar(
-            subtitle: 'Discovery',
+            subtitle: 'Discover',
             subactions: [
               SquareIconButton(
                 iconSize: 30,
