@@ -12,4 +12,5 @@ Sneakers shop app with Flutter (iOS and Android)
 - Android Simulator Pixel 5
 
 # Screen record
-https://user-images.githubusercontent.com/18518522/215355413-0d378109-0d17-4b1f-b065-46efee6c8850.mov
+https://user-images.githubusercontent.com/18518522/215355818-691928dd-6b1d-4e0b-bcc8-a7adc0bc9149.mov
+
