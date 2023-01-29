@@ -17,7 +17,7 @@ class HomePage extends NavigationPage {
       builder: (context, activeBrandIndex) {
         return DefaultTabController(
           length: mockSneakers.brands.length,
-          child: Column(
+          child: ListView(
             children: [
               TabBar(
                 padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
@@ -40,7 +40,8 @@ class HomePage extends NavigationPage {
                     ),
                 ],
               ),
-              Expanded(
+              SizedBox(
+                height: 350,
                 child: SneakersContent(
                   brand: mockSneakers.brands[activeBrandIndex],
                 ),
