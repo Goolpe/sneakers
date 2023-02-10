@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sneakers/core/images/images.dart';
 import 'package:sneakers/domain/entities/asset.dart';
 import 'package:sneakers/domain/entities/brand.dart';
 import 'package:sneakers/domain/entities/sneaker.dart';
 import 'package:sneakers/domain/entities/sneakers.dart';
+import 'package:sneakers/resources/resources.dart';
 
 const mockSneakers = Sneakers(
   brands: [
@@ -22,19 +22,19 @@ const mockSneakers = Sneakers(
           assets: [
             Asset(
               type: AssetType.picture,
-              path: Images.sneaker1,
+              path: Images.sneaker01,
             ),
             Asset(
               type: AssetType.picture,
-              path: Images.sneaker2,
+              path: Images.sneaker02,
             ),
             Asset(
               type: AssetType.picture,
-              path: Images.sneaker3,
+              path: Images.sneaker03,
             ),
             Asset(
               type: AssetType.video,
-              path: Images.sneaker4,
+              path: Images.sneaker04,
             ),
           ],
           description:
@@ -52,19 +52,19 @@ const mockSneakers = Sneakers(
           assets: [
             Asset(
               type: AssetType.picture,
-              path: Images.sneaker2,
+              path: Images.sneaker02,
             ),
             Asset(
               type: AssetType.picture,
-              path: Images.sneaker1,
+              path: Images.sneaker01,
             ),
             Asset(
               type: AssetType.picture,
-              path: Images.sneaker3,
+              path: Images.sneaker03,
             ),
             Asset(
               type: AssetType.video,
-              path: Images.sneaker4,
+              path: Images.sneaker04,
             ),
           ],
           description:
@@ -108,19 +108,19 @@ const _moreMockSneakers = [
     assets: [
       Asset(
         type: AssetType.picture,
-        path: Images.sneaker3,
+        path: Images.sneaker03,
       ),
       Asset(
         type: AssetType.picture,
-        path: Images.sneaker2,
+        path: Images.sneaker02,
       ),
       Asset(
         type: AssetType.picture,
-        path: Images.sneaker1,
+        path: Images.sneaker01,
       ),
       Asset(
         type: AssetType.video,
-        path: Images.sneaker4,
+        path: Images.sneaker04,
       ),
     ],
     description:
@@ -138,19 +138,19 @@ const _moreMockSneakers = [
     assets: [
       Asset(
         type: AssetType.picture,
-        path: Images.sneaker4,
+        path: Images.sneaker04,
       ),
       Asset(
         type: AssetType.picture,
-        path: Images.sneaker2,
+        path: Images.sneaker02,
       ),
       Asset(
         type: AssetType.picture,
-        path: Images.sneaker3,
+        path: Images.sneaker03,
       ),
       Asset(
         type: AssetType.video,
-        path: Images.sneaker1,
+        path: Images.sneaker01,
       ),
     ],
     description:
