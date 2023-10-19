@@ -15,8 +15,10 @@ class BagPage extends NavigationPage {
   BagDetails _sneakersDetails(List<BagSneaker> sneakers) {
     var bagDetails = BagDetails();
     for (var sneaker in sneakers) {
-      bagDetails.totalCount += sneaker.count;
-      bagDetails.totalSum += sneaker.price * sneaker.count;
+      bagDetails = bagDetails.copyWith(
+        totalCount: bagDetails.totalCount + sneaker.count,
+        totalSum: bagDetails.totalSum + sneaker.count,
+      );
     }
     return bagDetails;
   }

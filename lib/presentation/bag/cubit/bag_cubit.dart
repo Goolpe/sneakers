@@ -23,13 +23,15 @@ class BagCubit extends Cubit<List<BagSneaker>> {
   }
 
   void add(Sneaker sneaker) {
-    final bagSneaker = state.firstWhereOrNull(
+    var bagSneaker = state.firstWhereOrNull(
       (element) => element.id == sneaker.id,
     );
 
     if (bagSneaker != null) {
       if (bagSneaker.count < 20) {
-        bagSneaker.count += 1;
+        bagSneaker = bagSneaker.copyWith(
+          count: bagSneaker.count + 1,
+        );
       }
     } else {
       _latestSneakers.add(
@@ -45,19 +47,21 @@ class BagCubit extends Cubit<List<BagSneaker>> {
   }
 
   void addOne(int id) {
-    final bagSneaker = state.firstWhereOrNull(
+    var bagSneaker = state.firstWhereOrNull(
       (element) => element.id == id,
     );
 
     if (bagSneaker != null && bagSneaker.count < 20) {
-      bagSneaker.count += 1;
+      bagSneaker = bagSneaker.copyWith(
+        count: bagSneaker.count + 1,
+      );
 
       emit(List<BagSneaker>.from(state));
     }
   }
 
   void removeOne(int id) {
-    final bagSneaker = state.firstWhereOrNull(
+    var bagSneaker = state.firstWhereOrNull(
       (element) => element.id == id,
     );
 
@@ -65,7 +69,9 @@ class BagCubit extends Cubit<List<BagSneaker>> {
       if (bagSneaker.count == 1) {
         state.remove(bagSneaker);
       } else {
-        bagSneaker.count -= 1;
+        bagSneaker = bagSneaker.copyWith(
+          count: bagSneaker.count - 1,
+        );
       }
     }
 

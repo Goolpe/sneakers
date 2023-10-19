@@ -18,14 +18,14 @@ class _SizesComponentState extends State<SizesComponent> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.all(16),
+        const Padding(
+          padding: EdgeInsets.all(16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const LargeTitle('Size'),
+              LargeTitle('Size'),
               Row(
-                children: const [
+                children: [
                   LargeTitle('UK'),
                   SizedBox(width: 8),
                   LargeTitle('USA', color: Colors.grey),
@@ -45,8 +45,8 @@ class _SizesComponentState extends State<SizesComponent> {
                 ),
                 child: OutlinedButton(
                   onPressed: () {},
-                  child: Row(
-                    children: const [
+                  child: const Row(
+                    children: [
                       Text(
                         'Try it',
                         style: TextStyle(fontSize: 20),
